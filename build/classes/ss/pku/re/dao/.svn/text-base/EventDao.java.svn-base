@@ -1,0 +1,52 @@
+package ss.pku.re.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.springframework.orm.hibernate3.HibernateCallback;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+import ss.pku.re.domain.Event;
+
+public class EventDao extends HibernateDaoSupport implements IEventDao {
+	
+	private final static String ENTITYNAME = "ss.pku.re.domain.Event";
+	/**
+	 * 
+	 */
+	@Override
+	public Event save(Event event) {
+		return findById((Integer)this.getHibernateTemplate().save(event));
+	}
+	
+	public Event findById(int id){
+		return (Event) this.getHibernateTemplate().get(ENTITYNAME, id);
+	}
+
+	@Override
+	public List<Event> findTimesByEvent(final Event event,final int count) {
+		List eventList = this.getHibernateTemplate().executeFind(new HibernateCallback() {
+
+			public Object doInHibernate(Session session)
+					throws HibernateException, SQLException {
+				String queryString = "from "+ENTITYNAME+"  e where  e.key = ? and e.type=? order by e.receivedTime desc";
+				Query query = session.createQuery(queryString);
+				query.setParameter(0, event.getKey());
+				query.setParameter(1, event.getType());
+				query.setMaxResults(count);
+				return query.list();
+			}
+		});
+		return eventList;
+	}
+	
+	@Override
+	public Event findEventById(int id) {
+		return (Event) this.getHibernateTemplate().get(ENTITYNAME, id);
+	}
+	
+	
+}

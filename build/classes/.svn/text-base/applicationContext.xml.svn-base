@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- Configuration of the data source -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/ruleengine" />
+		<property name="username" value="root" />
+		<property name="password" value="123456" />
+	</bean>
+	<!-- Configuration of session factory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+ 		<property name="mappingResources"> 
+ 			<list> 
+ 				<value>ss/pku/re/domain/Event.hbm.xml</value> 
+ 			</list> 
+ 		</property> 
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=org.hibernate.dialect.MySQLDialect
+				hibernate.show_sql=true
+			</value>
+		</property>
+	</bean>
+
+	<!-- Configuration of DAO objects -->
+	<bean id="eventDao" class="ss.pku.re.dao.EventDao">
+		<property name="sessionFactory" ref="sessionFactory"/>	
+	</bean>
+	
+	<!-- Configuration of Service objects -->
+	<bean id="ruleService" class="ss.pku.re.service.RuleServiceByDrools">
+		
+	</bean>
+	<bean id="eventService" class="ss.pku.re.service.EventService">
+		<property name="eventDao" ref="eventDao"/>
+	</bean>
+	<import resource="actionContext.xml"/>
+</beans>
+
+

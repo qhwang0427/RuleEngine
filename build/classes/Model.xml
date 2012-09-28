@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenes xmlns="http://pku.edu.cn/Scene" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pku.edu.cn/Scene file:///C:/Users/lqs/Desktop/Scenes1108.xsd">
+	<Scene ID="scene1">
+		<Fields>
+			<Field>
+				<Name>场景1</Name>
+			</Field>
+		</Fields>
+		<Rules>
+			<ruleID>ruleId1</ruleID>
+			<ruleID>ruleId2</ruleID>
+		</Rules>
+	</Scene>
+	<Scene ID="scene2">
+		<Fields>
+			<Field>
+				<Name>场景2</Name>
+			</Field>
+		</Fields>
+		<Rules>
+			<ruleID>ruleId2</ruleID>
+		</Rules>
+	</Scene>
+	<RulesDef>
+		<!--输出是场景，并且调用web service的情况 -->
+		<RuleDef ID="ruleId1" name="name1">
+			<type>2</type>
+			<Condition>
+				<BusinessEvent ID="event01">
+					<Name>温度</Name>
+					<Value>
+						<dimension>1</dimension>
+						<expression><![CDATA[values[0]>=10;values[0]<=12;t=1;]]></expression>
+					</Value>
+				</BusinessEvent>
+				<BusinessEvent ID="event02">
+					<Name>人</Name>
+					<Value>
+						<dimension>2</dimension>
+						<!--表达式的意思value[0]代表第一维的数据，times代表发生的次数，event02-event01<100:表示事件event02在event01之后100秒内发生 事件单位要看DIA传来的单位最小支持多少-->
+						<expression><![CDATA[values[0]>30;times=1;event02-event01<100000]]></expression>
+					</Value>
+				</BusinessEvent>
+			</Condition>
+			<Action>
+				<!--Action里面是不是应该有输出复杂事件的情况-->
+				<Transition>
+					<!--这里会引用到下面的TransitionDef，根据Id进行对应-->
+					<TransitionID>t1</TransitionID>
+				</Transition>
+				<Service>
+					<!--这里会引用到下面的ServiceDef，也是根据Id进行对应-->
+					<ServiceID>s1</ServiceID>
+				</Service>
+			</Action>
+		</RuleDef>
+		<!--输出是复杂事件情况 -->
+		<RuleDef ID="ruleId2" name="name2">
+			<type>1</type>
+			<Condition>
+				<BusinessEvent ID="event04">
+					<Name>GPS</Name>
+					<Value>
+						<dimension>3</dimension>
+						<!--values[0] values[1] values[2]代表三个维度的条件 -->
+						<expression><![CDATA[values[0]>=31.12;values[0]<=32.11;values[1]<10.11;values[1]>=9.11;values[2]<88.09;values[2]>87.33;times=1;]]></expression>
+					</Value>
+				</BusinessEvent>
+			</Condition>
+			<Action>
+				<!--这边还没想到会产生什么事件，不过这边肯定要实现调用一个方法 -->
+				<BusinessEvent ID="event04">
+					<Name>湿度</Name>
+					<Value>30</Value>
+				</BusinessEvent>
+			</Action>
+		</RuleDef>
+	</RulesDef>
+	<TransitionsDef>
+		<TransitionDef ID="t1">
+			<From>
+				<!--这里对应<Scene>里面的东西 -->
+				<SceneID>scene1</SceneID>
+			</From>
+			<To>
+				<SceneID>scene2</SceneID>
+			</To>
+		</TransitionDef>
+	</TransitionsDef>
+	<ServicesDef>
+		<!--我们按照这个name进行划分规则引擎 -->
+		<ServiceDef ID="s1" Name="AirCondition">
+			<!--这边的内容先不用管他，我们只需要实现调用一个方法(方法里面可以传这些参数) -->
+			<Types/>
+			<Message>0012</Message>
+			<portType>
+				<operation>
+					<input/>
+					<output/>
+					<fault/>
+				</operation>
+			</portType>
+			<ServiceType/>
+			<binding/>
+		</ServiceDef>
+	</ServicesDef>
+</Scenes>

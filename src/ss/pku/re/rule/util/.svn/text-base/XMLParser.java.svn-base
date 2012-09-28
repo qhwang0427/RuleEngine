@@ -1,0 +1,12 @@
+package ss.pku.re.rule.util;
+
+public class XMLParser {
+	/**
+	 * parse the xml and create the drl files
+	 * @return
+	 */
+	public static boolean parseXML(){
+		
+		return true;
+	}
+}

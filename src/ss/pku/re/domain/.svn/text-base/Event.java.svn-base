@@ -1,0 +1,76 @@
+package ss.pku.re.domain;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import org.springframework.context.ApplicationContext;
+
+import ss.pku.re.rule.util.ContextFactory;
+import ss.pku.re.service.EventService;
+import ss.pku.re.service.IEventService;
+
+public class Event implements Serializable{
+		
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int id;
+	private String key;
+	private String type;
+	private String typev;
+	private Type value;
+	private Date receivedTime;
+	private int times;
+	
+	/*getter setter */
+	
+	public String getKey() {
+		return key;
+	}
+	public void setKey(String key) {
+		this.key = key;
+	}
+	public Type getValue() {
+		if(value==null)
+			value = TypeFactory.createType(type, typev);
+		return value;
+	}
+	public void setValue(Type value) {
+		this.value = value;
+	}
+	public Date getReceivedTime() {
+		return receivedTime;
+	}
+	public void setReceivedTime(Date receivedTime) {
+		this.receivedTime = receivedTime;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getTypev() {
+		return typev;
+	}
+	public void setTypev(String typev) {
+		this.typev = typev;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public int getTimes(int count) {
+		ApplicationContext context = ContextFactory.getContext();
+		IEventService eventService = (EventService)context.getBean("eventService");
+		System.out.println(eventService.getTimesByEvent(this, count));
+		return eventService.getTimesByEvent(this, count);
+	}
+	public void setTimes(int times) {
+		this.times = times;
+	}
+}

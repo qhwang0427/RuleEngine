@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/RuleEngine/!svn/ver/2/RuleEngine/src
+END
+actionContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/RuleEngine/!svn/ver/1/RuleEngine/src/actionContext.xml
+END
+struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/RuleEngine/!svn/ver/1/RuleEngine/src/struts.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/RuleEngine/!svn/ver/4/RuleEngine/src/applicationContext.xml
+END

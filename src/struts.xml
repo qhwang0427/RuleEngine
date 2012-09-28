@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.multipart.saveDir" value="/tmp"></constant>
+	<package name="re" namespace="/" extends="struts-default">
+		<global-results>
+            <result name="error">/error.jsp</result>
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+        
+        <action name="init" class="ss.pku.re.action.testInitAction" method="initEngine">
+        	<result name="success">/welcome.jsp</result>
+        </action>
+        <!-- 配置start Action，处理类为PanelAction，默认使用execute方法处理请求-->
+		<action name="start" class="ss.pku.re.action.StartEnginesAction">
+			<!-- 定义逻辑视图和物理视图之间的映射关系 -->
+			<result name="error">/error.jsp</result>
+			<result name="success">/success.jsp</result>
+		</action>
+
+		<action name="manage" class="ss.pku.re.action.ManageEnginesAction">
+			<!-- 定义逻辑视图和物理视图之间的映射关系 -->
+			<result name="error">/error.jsp</result>
+			<result name="success">/manage.jsp</result>
+		</action>
+		<action name="sxml" class="ss.pku.re.action.SingleXmlAction">
+			<!-- 定义逻辑视图和物理视图之间的映射关系 -->
+			<result name="error">/error.jsp</result>
+			<result name="success">/success.jsp</result>
+		</action>
+		<action name="connect" class="ss.pku.re.action.DIAConnectAction">
+			<!-- 定义逻辑视图和物理视图之间的映射关系 -->
+			<result name="error">/error.jsp</result>
+			<result name="success">/success.jsp</result>
+		</action>
+		
+		<action name="pauseEngines" class="ss.pku.re.action.ManageEnginesAction"
+			method="pauseEngines">
+			<!-- 定义逻辑视图和物理视图之间的映射关系 -->
+			<result name="error">/error.jsp</result>
+			<result name="success">/success.jsp</result>
+		</action>
+
+		<action name="resumeEngines" class="ss.pku.re.action.ManageEnginesAction"
+			method="resumeEngines">
+			<!-- 定义逻辑视图和物理视图之间的映射关系 -->
+			<result name="error">/error.jsp</result>
+			<result name="success">/success.jsp</result>
+		</action>
+	</package>
+</struts>    

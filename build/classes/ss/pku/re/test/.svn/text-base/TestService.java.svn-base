@@ -1,0 +1,28 @@
+package ss.pku.re.test;
+
+import org.junit.Test;
+
+import ss.pku.re.domain.Event;
+import ss.pku.re.domain.TypeFactory;
+import ss.pku.re.service.IRuleService;
+import ss.pku.re.service.RuleServiceByDrools;
+
+public class TestService {
+	private IRuleService service;
+	public TestService(){
+		this.service = new RuleServiceByDrools();
+	}
+	@Test
+	public void testReceiveEvent(){
+		Event event = new Event();
+		event.setKey("002");
+		event.setType("string");
+		event.setTypev("有人");
+		service.receiveEvent(event);
+		event = new Event();
+		event.setKey("02");
+		event.setValue(TypeFactory.createType("int", "35"));
+		service.receiveEvent(event);
+	}
+}	
+

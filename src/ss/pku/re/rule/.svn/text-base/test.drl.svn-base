@@ -1,0 +1,10 @@
+package rerules
+import ss.pku.re.domain.Event;
+import ss.pku.re.domain.TypeFactory;
+rule 'service1'
+when
+Event(key.equals('002'),value.compareTo(TypeFactory.createType('string','有人'))>=0,value.compareTo(TypeFactory.createType('string','有人'))<=0,getTimes(5)==5);
+Event(key.equals('02'),value.compareTo(TypeFactory.createType('float','12'))>=0,value.compareTo(TypeFactory.createType('float','30'))<=0);
+then
+System.out.println('/******Situmulate the condition******/');
+end

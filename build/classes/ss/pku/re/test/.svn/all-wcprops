@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/RuleEngine/!svn/ver/2/RuleEngine/src.test/ss/pku/re/test
+END
+TestService.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/RuleEngine/!svn/ver/4/RuleEngine/src.test/ss/pku/re/test/TestService.java
+END
+TestEventDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/RuleEngine/!svn/ver/4/RuleEngine/src.test/ss/pku/re/test/TestEventDao.java
+END
+TestTypeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/RuleEngine/!svn/ver/2/RuleEngine/src.test/ss/pku/re/test/TestTypeFactory.java
+END
+TestParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RuleEngine/!svn/ver/4/RuleEngine/src.test/ss/pku/re/test/TestParser.java
+END

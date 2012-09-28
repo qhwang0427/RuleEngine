@@ -1,0 +1,18 @@
+package rerules
+import ss.pku.re.domain.Event;
+import ss.pku.re.rule.util.domain.Service;
+import ss.pku.re.rule.util.DIAServiceManager;
+query 'query fact'(String id)
+event:Event(eventId==id)
+end
+rule'rule_Scene1_rule'
+when
+Context3:Event(eventId.equals('Context3'),values[0]>135,values[0]<140,values[1]>30,values[1]<40)
+Context4:Event(eventId.equals('Context4'),values[0]>30)
+
+then
+Service service= new Service();
+service.setServiceId('Service1');
+service.setValue('HelloWord!');
+DIAServiceManager.sendService(service);
+ end

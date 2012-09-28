@@ -1,0 +1,21 @@
+package ss.pku.re.test;
+import org.junit.Test;
+
+import ss.pku.re.domain.Type;
+import ss.pku.re.domain.TypeFactory;
+
+public class TestTypeFactory {
+	@Test
+	public void testTypeTypeFactory(){
+		Type type1 = TypeFactory.createType("string", "123abc");
+		Type type2 = TypeFactory.createType("string", "123abc");
+		Type type3 = TypeFactory.createType("string", "123abcd");
+		System.out.println(type1.compareTo(type2));
+		System.out.println(type1.compareTo(type3));
+		Type type4 = TypeFactory.createType("int", "123");
+		Type type5 = TypeFactory.createType("int", "1234");
+		Type type6 = TypeFactory.createType("float", "122");
+		System.out.println(type4.compareTo(type5));
+		System.out.println(type4.compareTo(type6));
+	}
+}

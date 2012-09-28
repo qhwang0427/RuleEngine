@@ -1,0 +1,15 @@
+package ss.pku.re.domain;
+
+public abstract class Type implements Comparable<Type>{
+	
+	public String value;
+	
+	@Override
+	public abstract int compareTo(Type o);
+	public String getValue() {
+		return value;
+	}
+	public void setValue(String value) {
+		this.value = value;
+	}
+}

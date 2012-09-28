@@ -1,0 +1,27 @@
+package ss.pku.re.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
+import ss.pku.re.domain.Condition;
+import ss.pku.re.rule.util.RulesBuilder;
+
+public class TestParser {
+	private RulesBuilder builder;
+	public TestParser(){
+		System.out.println(System.getProperty("user.dir"));
+		builder = new RulesBuilder(System.getProperty("user.dir")+"/src/ss/pku/re/rule/"+"test.drl");
+	}
+	@Test
+	public void testBuildRule(){
+		List<Condition> conditions = new ArrayList<Condition>();
+		Condition c1 = new Condition("01","string","有人","有人");
+		Condition c2 = new Condition("02","float","30","12");
+		conditions.add(c1);
+		conditions.add(c2);
+		builder.createRule("service1", conditions);
+		builder.writeRule();
+	}
+}

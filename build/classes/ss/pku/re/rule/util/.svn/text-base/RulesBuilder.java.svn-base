@@ -1,0 +1,55 @@
+package ss.pku.re.rule.util;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
+import ss.pku.re.domain.Condition;
+
+public class RulesBuilder {
+	private String filePath;
+	private StringBuffer buffer;
+	private static final String INITCONTEXT = "package rerules\n" +
+			"import ss.pku.re.domain.Event;\n" +
+			"import ss.pku.re.domain.TypeFactory;\n";
+	/*
+	 * 传入参数：存储的文件名
+	 */
+	public RulesBuilder(String filePath){
+		this.filePath = filePath;
+		buffer = new StringBuffer(INITCONTEXT);
+	}
+	
+	public void createRule(String ruleName,List<Condition>conditions){
+		buffer.append("rule '"+ruleName+"'\n");
+		buffer.append("when"+"\n");
+		/*真正的写入部分，前面都是一些初始化工作*/
+		//	Event(key.equals("01"),value.compareTo(TypeFactory.createType("string","123abc"))>=0,value.compareTo(TypeFactory.createType("string","123abc"))<=0);
+		for(Condition condition:conditions){
+			buffer.append("Event(key.equals(");
+			buffer.append("'"+condition.getKey()+"'");
+			buffer.append("),value.compareTo(TypeFactory.createType(");
+			buffer.append("'"+condition.getType()+"'");
+			buffer.append(",'"+condition.getMin()+"'))>=0,value.compareTo(TypeFactory.createType(");
+			buffer.append("'"+condition.getType()+"'");
+			buffer.append(",'"+condition.getMax()+"'))<=0);");
+			buffer.append("\n");
+		}
+		buffer.append("then"+"\n");
+		buffer.append("System.out.println('/******Situmulate the condition******/');\n");
+		buffer.append("end");
+	}
+	
+	public boolean writeRule(){
+		try {
+			FileWriter writer = new FileWriter(new File(filePath));
+			/*init the drl file*/
+			writer.write(buffer.toString());
+			writer.close();
+		} catch (IOException e) {
+			System.out.println("文件没有找到");
+			return false;
+		}
+		return true;
+	}
+}

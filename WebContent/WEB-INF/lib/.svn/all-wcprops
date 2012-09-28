@@ -1,0 +1,647 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib
+END
+org.springframework.web.portlet-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.web.portlet-3.0.1.RELEASE-A.jar
+END
+org.springframework.instrument-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.instrument-3.0.1.RELEASE-A.jar
+END
+com.springsource.net.sf.cglib-2.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/com.springsource.net.sf.cglib-2.2.0.jar
+END
+jotm.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/jotm.jar
+END
+commons-digester-2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/commons-digester-2.0.jar
+END
+org.springframework.web-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.web-3.0.1.RELEASE-A.jar
+END
+jxl-2.6.10.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/jxl-2.6.10.jar
+END
+bcprov-jdk14-138.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/bcprov-jdk14-138.jar
+END
+xstream-1.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/xstream-1.4.1.jar
+END
+org.springframework.transaction-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.transaction-3.0.1.RELEASE-A.jar
+END
+persistence.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/persistence.jar
+END
+droolsjbpm-introduction-docs-5.3.0.Final.jdocbook
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/droolsjbpm-introduction-docs-5.3.0.Final.jdocbook
+END
+JimiProClasses.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/JimiProClasses.jar
+END
+org.springframework.beans-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.beans-3.0.1.RELEASE-A.jar
+END
+hibernate-commons-annotations-3.1.0.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/hibernate-commons-annotations-3.1.0.GA.jar
+END
+commons-chain-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/commons-chain-1.2.jar
+END
+commons-fileupload-1.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/commons-fileupload-1.2.1.jar
+END
+org.springframework.expression-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.expression-3.0.1.RELEASE-A.jar
+END
+log4j-1.2.14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/log4j-1.2.14.jar
+END
+org.springframework.aspects-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.aspects-3.0.1.RELEASE-A.jar
+END
+org.springframework.jdbc-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.jdbc-3.0.1.RELEASE-A.jar
+END
+ecj-3.5.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/ecj-3.5.1.jar
+END
+drools-verifier-5.3.0.Final.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/drools-verifier-5.3.0.Final.jar
+END
+aopalliance-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/aopalliance-1.0.jar
+END
+ognl-2.7.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/ognl-2.7.3.jar
+END
+mvel2-2.1.0.drools4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/mvel2-2.1.0.drools4.jar
+END
+freemarker-2.3.15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/freemarker-2.3.15.jar
+END
+jstl-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/jstl-1.2.jar
+END
+jta-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/jta-1.1.jar
+END
+json-lib-2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/json-lib-2.1.jar
+END
+xml-apis-1.3.04.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/xml-apis-1.3.04.jar
+END
+javassist-3.12.0.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/javassist-3.12.0.GA.jar
+END
+hibernate-core-3.3.2.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/hibernate-core-3.3.2.GA.jar
+END
+struts2-core-2.1.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/struts2-core-2.1.8.1.jar
+END
+drools-core-5.3.0.Final.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/drools-core-5.3.0.Final.jar
+END
+mail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/mail.jar
+END
+ejb3-persistence-1.0.2.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/ejb3-persistence-1.0.2.GA.jar
+END
+persistence-api-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/persistence-api-1.0.jar
+END
+itext-2.1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/itext-2.1.2.jar
+END
+commons-logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/commons-logging-1.1.1.jar
+END
+org.springframework.orm-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.orm-3.0.1.RELEASE-A.jar
+END
+org.springframework.instrument.tomcat-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.instrument.tomcat-3.0.1.RELEASE-A.jar
+END
+quartz-all-1.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/quartz-all-1.7.1.jar
+END
+org.springframework.web.servlet-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.web.servlet-3.0.1.RELEASE-A.jar
+END
+xom-1.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/xom-1.2.1.jar
+END
+com.springsource.org.apache.commons.logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/com.springsource.org.apache.commons.logging-1.1.1.jar
+END
+mysql-connector-java-3.1.11-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/mysql-connector-java-3.1.11-bin.jar
+END
+xwork-core-2.1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/xwork-core-2.1.6.jar
+END
+drools-compiler-5.3.0.Final.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/drools-compiler-5.3.0.Final.jar
+END
+drools-clips-5.3.0.Final.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/drools-clips-5.3.0.Final.jar
+END
+com.springsource.com.mchange.v2.c3p0-0.9.1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/com.springsource.com.mchange.v2.c3p0-0.9.1.2.jar
+END
+bcmail-jdk14-138.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/bcmail-jdk14-138.jar
+END
+dom4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/dom4j-1.6.1.jar
+END
+org.springframework.aop-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.aop-3.0.1.RELEASE-A.jar
+END
+knowledge-api-5.3.0.Final.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/knowledge-api-5.3.0.Final.jar
+END
+org.springframework.asm-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.asm-3.0.1.RELEASE-A.jar
+END
+jsf-impl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/jsf-impl.jar
+END
+hibernate-annotations-3.4.0.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/hibernate-annotations-3.4.0.GA.jar
+END
+org.springframework.context-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.context-3.0.1.RELEASE-A.jar
+END
+com.springsource.org.codehaus.jackson.mapper-1.0.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/com.springsource.org.codehaus.jackson.mapper-1.0.0.jar
+END
+commons-collections-3.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/commons-collections-3.2.1.jar
+END
+drools-templates-5.3.0.Final.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/drools-templates-5.3.0.Final.jar
+END
+org.springframework.core-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.core-3.0.1.RELEASE-A.jar
+END
+org.springframework.jms-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.jms-3.0.1.RELEASE-A.jar
+END
+struts2-embeddedjsp-plugin-2.1.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/struts2-embeddedjsp-plugin-2.1.8.1.jar
+END
+com.springsource.org.apache.commons.pool-1.5.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/com.springsource.org.apache.commons.pool-1.5.3.jar
+END
+xmlpull-1.1.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar
+END
+hibernate-entitymanager-3.4.0.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/hibernate-entitymanager-3.4.0.GA.jar
+END
+commons-validator-1.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/commons-validator-1.3.1.jar
+END
+classworlds-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/classworlds-1.1.jar
+END
+com.springsource.org.apache.commons.lang-2.4.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/com.springsource.org.apache.commons.lang-2.4.0.jar
+END
+com.springsource.org.apache.commons.fileupload-1.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/com.springsource.org.apache.commons.fileupload-1.2.0.jar
+END
+javassist-3.9.0.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/javassist-3.9.0.GA.jar
+END
+antlr-runtime-3.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/antlr-runtime-3.3.jar
+END
+oro-2.0.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/oro-2.0.8.jar
+END
+commons-logging-api-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/commons-logging-api-1.1.jar
+END
+drools-jsr94-5.3.0.Final.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/drools-jsr94-5.3.0.Final.jar
+END
+struts2-convention-plugin-2.1.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/struts2-convention-plugin-2.1.8.1.jar
+END
+com.springsource.org.apache.log4j-1.2.15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/com.springsource.org.apache.log4j-1.2.15.jar
+END
+jsr94-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/jsr94-1.1.jar
+END
+sslext-1.2-0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/sslext-1.2-0.jar
+END
+ehcache-1.2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/ehcache-1.2.3.jar
+END
+cglib-2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/cglib-2.2.jar
+END
+commons-io-1.3.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/commons-io-1.3.2.jar
+END
+org.springframework.web.struts-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.web.struts-3.0.1.RELEASE-A.jar
+END
+drools-decisiontables-5.3.0.Final.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/drools-decisiontables-5.3.0.Final.jar
+END
+commons-dbcp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/commons-dbcp.jar
+END
+hibernate3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/hibernate3.jar
+END
+google-collections-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/google-collections-1.0.jar
+END
+ezmorph-1.0.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/ezmorph-1.0.6.jar
+END
+org.springframework.context.support-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.context.support-3.0.5.RELEASE.jar
+END
+drools-persistence-jpa-5.3.0.Final.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/drools-persistence-jpa-5.3.0.Final.jar
+END
+struts2-spring-plugin-2.1.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/struts2-spring-plugin-2.1.8.1.jar
+END
+com.springsource.org.aopalliance-1.0.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/com.springsource.org.aopalliance-1.0.0.jar
+END
+antlr-2.7.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/RuleEngine/!svn/ver/4/RuleEngine/WebContent/WEB-INF/lib/antlr-2.7.6.jar
+END
+json-lib-2.3-jdk15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/json-lib-2.3-jdk15.jar
+END
+jsf-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/jsf-api.jar
+END
+slf4j-api-1.6.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/slf4j-api-1.6.0.jar
+END
+com.springsource.org.apache.commons.httpclient-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/com.springsource.org.apache.commons.httpclient-3.1.0.jar
+END
+commons-lang-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/commons-lang-2.4.jar
+END
+struts2-json-plugin-2.1.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/struts2-json-plugin-2.1.8.1.jar
+END
+com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar
+END
+xpp3_min-1.1.4c.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/xpp3_min-1.1.4c.jar
+END
+commons-beanutils-1.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/commons-beanutils-1.7.0.jar
+END
+stringtemplate-3.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/stringtemplate-3.2.1.jar
+END
+org.springframework.oxm-3.0.1.RELEASE-A.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/org.springframework.oxm-3.0.1.RELEASE-A.jar
+END
+xapool.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/RuleEngine/!svn/ver/1/RuleEngine/WebContent/WEB-INF/lib/xapool.jar
+END

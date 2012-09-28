@@ -1,0 +1,30 @@
+#created on: 2011-12-5
+package ReRules
+
+#list any import classes here.
+import ss.pku.re.domain.Event;
+import ss.pku.re.domain.TypeFactory;
+#declare any global variables here
+
+#query segments starts
+#query "people fact"(int $roomId)
+#	simpleEvent:PeopleEvent(roomId==$roomId);
+#end
+#query "temperature fact"(int $roomId)
+#	simpleEvent:TemperatureEvent(roomId==$roomId);
+#end
+#query segments ends
+ 
+
+
+rule "event1"
+    when
+        #conditions 
+       	Event(key.equals("01"),value.compareTo(TypeFactory.createType("string","123abc"))>=0,value.compareTo(TypeFactory.createType("string","123abc"))<=0);
+       	Event(key.equals("02"),value.compareTo(TypeFactory.createType("int","123"))>=0,value.compareTo(TypeFactory.createType("int","213"))<=0);
+    then
+        #actions
+        System.out.println("/******Situmulate the condition******/");
+end	
+
+

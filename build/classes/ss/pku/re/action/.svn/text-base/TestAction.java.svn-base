@@ -1,0 +1,30 @@
+package ss.pku.re.action;
+
+import ss.pku.re.domain.Event;
+import ss.pku.re.service.IRuleService;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class TestAction extends ActionSupport {
+
+	private static final long serialVersionUID = 247156336542356006L;
+
+	private IRuleService ruleService;
+	/**
+	 * 有了事件模拟器之后再进行测试
+	 * @return
+	 */
+	public String receiveEvent() {
+		// A1事件
+		Event event = new Event();
+		event.setKey("id");
+//		event.setValue("value");
+		ruleService.receiveEvent(event);
+		return SUCCESS;
+	}
+
+	public void setRuleService(IRuleService ruleService) {
+		this.ruleService = ruleService;
+	}
+
+}

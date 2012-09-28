@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/RuleEngine/!svn/ver/1/RuleEngine/src/ss/pku/re/dao
+END
+EventDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/RuleEngine/!svn/ver/4/RuleEngine/src/ss/pku/re/dao/EventDao.java
+END
+IEventDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/RuleEngine/!svn/ver/4/RuleEngine/src/ss/pku/re/dao/IEventDao.java
+END

@@ -1,0 +1,17 @@
+package ss.pku.re.domain;
+
+public class StringType extends Type{
+	/*字符串类型的比较*/
+	public StringType(String value){
+		this.value = value;
+	}
+	/*字符串只有相等或者不等的比较*/
+	@Override
+	public int compareTo(Type o) {
+		StringType t= (StringType)o;
+		if(value.equals(t.getValue()))
+			return 0;                   
+		else
+			return 1;
+	}
+}

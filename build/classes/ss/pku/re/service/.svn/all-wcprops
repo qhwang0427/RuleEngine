@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/RuleEngine/!svn/ver/2/RuleEngine/src/ss/pku/re/service
+END
+IRuleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RuleEngine/!svn/ver/2/RuleEngine/src/ss/pku/re/service/IRuleService.java
+END
+EventService.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RuleEngine/!svn/ver/4/RuleEngine/src/ss/pku/re/service/EventService.java
+END
+RuleServiceByDrools.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/RuleEngine/!svn/ver/4/RuleEngine/src/ss/pku/re/service/RuleServiceByDrools.java
+END
+IEventService.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/RuleEngine/!svn/ver/4/RuleEngine/src/ss/pku/re/service/IEventService.java
+END

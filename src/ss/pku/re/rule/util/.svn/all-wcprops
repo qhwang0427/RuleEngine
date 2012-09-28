@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/RuleEngine/!svn/ver/2/RuleEngine/src/ss/pku/re/rule/util
+END
+RulesBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/RuleEngine/!svn/ver/3/RuleEngine/src/ss/pku/re/rule/util/RulesBuilder.java
+END
+KnowledgeSessionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/RuleEngine/!svn/ver/3/RuleEngine/src/ss/pku/re/rule/util/KnowledgeSessionFactory.java
+END
+ContextFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/RuleEngine/!svn/ver/4/RuleEngine/src/ss/pku/re/rule/util/ContextFactory.java
+END
+XMLParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/RuleEngine/!svn/ver/2/RuleEngine/src/ss/pku/re/rule/util/XMLParser.java
+END

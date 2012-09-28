@@ -1,0 +1,40 @@
+package ss.pku.re.domain;
+
+/**
+ * 简单的只有三个类型
+ * 
+ * @author lqs
+ * 
+ */
+public class TypeFactory {
+	private static enum Types {
+		INT("int"), FLOAT("float"), STRING("string");
+		private String name;
+
+		Types(String name) {
+			this.name = name;
+		}
+
+		public String getName() {
+			return name;
+		}
+	};
+	/**
+	 * 
+	 * @param type
+	 * @param value
+	 * @return
+	 */
+	public static Type createType(String type, String value) {
+		Types[] types = Types.values();
+		for (Types t : types) {
+			if (t.getName().equals(type)) {
+				if (t == Types.INT || t == Types.FLOAT)
+					return new NumbericType(value);
+				else
+					return new StringType(value);
+			}
+		}
+		return null;
+	}
+}

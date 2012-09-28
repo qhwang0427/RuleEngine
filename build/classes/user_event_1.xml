@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test.xsd">
+	<!--first event -->
+	<event>
+		<!--sensor id -->
+		<id>温度01</id>
+		<!-- situation（情景) name-->
+		<name>温度</name>
+		<!-- situation values-->
+		<values>
+			<!--type of value. such as: int, float, string-->
+			<type>float</type>
+			<max>20.0 </max>
+			<min> 15.0  </min>
+		</values>
+	</event>
+	<!--second event-->
+	<event>
+		<id>人01</id>
+		<name>人</name>
+		<values>
+			<type>string</type>
+			<max>有人</max>
+			<min> 有人</min>
+		</values>
+	</event>
+	<!--事件触发的服务 -->
+	<services>
+		<id>空调01</id>
+		<order>开</order>
+	</services>
+</result>

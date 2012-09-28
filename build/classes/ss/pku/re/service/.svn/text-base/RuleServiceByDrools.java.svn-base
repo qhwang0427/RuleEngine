@@ -1,0 +1,39 @@
+package ss.pku.re.service;
+ 
+
+import org.drools.runtime.StatefulKnowledgeSession;
+import org.drools.runtime.rule.QueryResults;
+import ss.pku.re.domain.Event;
+import ss.pku.re.rule.util.KnowledgeSessionFactory;
+
+public class RuleServiceByDrools implements IRuleService{
+	private StatefulKnowledgeSession session;
+	
+	public RuleServiceByDrools(){
+		session = KnowledgeSessionFactory.getSession("ss/pku/re/rule/test.drl");
+	}
+	@Override
+	public void receiveEvent(Event event) {
+//		System.out.println("room"+event.getRoomId()+" "+event.toString());
+//		session.setGlobal("temp", new Temperature(12,12));
+//		QueryResults result = session.getQueryResults(query,event.getRoomId());
+//		for(QueryResultsRow pe:result){
+//			session.retract(pe.getFactHandle("simpleEvent"));
+//		}
+		session.insert(event); 
+		session.fireAllRules();
+		session.dispose();
+		return;
+	}
+	@Override
+	public QueryResults getQueryResults(String query) {
+		return session.getQueryResults(query);
+	}
+	
+	public StatefulKnowledgeSession getSession() {
+		return session;
+	}
+	public void setSession(StatefulKnowledgeSession session) {
+		this.session = session;
+	}
+}

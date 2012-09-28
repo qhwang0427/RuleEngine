@@ -1,0 +1,38 @@
+package rerules
+import ss.pku.re.domain.Event;
+import ss.pku.re.rule.util.domain.Service;
+import ss.pku.re.rule.util.DIAServiceManager;
+query 'query fact'(String id)
+event:Event(eventId==id)
+end
+rule'scene1_name1'
+when
+event01:Event(eventId.equals('event01'),values[0]>=10,values[0]<=12)
+event02:Event(eventId.equals('event02'),values[0]>30,checkTime(event01.getReceivedTime(),100000.0,'<')==true)
+
+then
+Service service= new Service();
+service.setServiceId('s1');
+service.setValue('0012');
+DIAServiceManager.sendService(service);
+ end
+rule'scene1_name2'
+when
+event04:Event(eventId.equals('event04'),values[0]>=31.12,values[0]<=32.11,values[1]<10.11,values[1]>=9.11,values[2]<88.09,values[2]>87.33)
+
+then
+Event event= new Event();
+event.setEventId('event04');
+event.setValue('30');
+DIAServiceManager.sendEvent(event);
+ end
+rule'scene2_name2'
+when
+event04:Event(eventId.equals('event04'),values[0]>=31.12,values[0]<=32.11,values[1]<10.11,values[1]>=9.11,values[2]<88.09,values[2]>87.33)
+
+then
+Event event= new Event();
+event.setEventId('event04');
+event.setValue('30');
+DIAServiceManager.sendEvent(event);
+ end
