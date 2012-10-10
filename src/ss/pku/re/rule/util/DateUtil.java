@@ -49,12 +49,12 @@ public class DateUtil {
 					int tempSecond = Integer.parseInt(tt1[2])-Integer.parseInt(tt2[2]);
 					diff+= ((tempHour*60+tempMin)*60+tempSecond)*1000;
 				}else{
-					logger.info("解析的时间格式不对");
+					logger.info("52:解析的时间格式不对");
 				}
 				diff+=Integer.parseInt(times1[2])-Integer.parseInt(times2[2]);
 			}
 		}else{
-		logger.info("解析的时间格式不对");
+		logger.info("57:解析的时间格式不对");
 		}
 		return diff;
 	}

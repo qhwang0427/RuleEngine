@@ -14,16 +14,25 @@ import org.hibernate.Session;
 import org.springframework.orm.hibernate3.HibernateCallback;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
+import com.sun.org.apache.bcel.internal.generic.NEW;
+
 import ss.pku.re.domain.Event;
 
 public class EventDao extends HibernateDaoSupport implements IEventDao {
 	
 	private final static String ENTITYNAME = "ss.pku.re.domain.Event";
+	private SimpleDateFormat sdfFromDIA = new SimpleDateFormat("yyyy-MM-dd-HH.mm.ss.SSSS"); 
+	private SimpleDateFormat sdfToDB = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSSS");
 	/**
 	 * 
 	 */
 	@Override
-	public Event save(Event event) {
+	public Event save(Event event) {		
+		try {
+			event.setReceivedTime(sdfToDB.format(sdfFromDIA.parse(event.getReceivedTime())));
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
 		return findById((Integer)this.getHibernateTemplate().save(event));
 	}
 	
@@ -48,11 +57,9 @@ public class EventDao extends HibernateDaoSupport implements IEventDao {
 								+ "  e where e.receivedTime>=? and e.receivedTime<=? order by e.receivedTime desc";// order by e.receivedTime desc
 						Query query = session.createQuery(queryString);
 						
-						SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH.mm.ss.SSSS"); 
+						 
 						try {
-							
-							
-							query.setString(0,sdf.format(new Date(sdf.parse(event.getReceivedTime()).getTime()-limitTime*60*1000)));
+							query.setString(0,sdfFromDIA.format(new Date(sdfFromDIA.parse(event.getReceivedTime()).getTime()-limitTime*60*1000)));
 						} catch (ParseException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();

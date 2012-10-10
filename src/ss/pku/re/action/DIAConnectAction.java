@@ -64,7 +64,7 @@ public class DIAConnectAction extends ActionSupport {
 
 			public void onMessage(Map<String, String> msg) {
 				Util.traceEvent(msg);
-				System.out.println("TOPIC: "+msg.get(DIAMessage.TOPIC));
+				System.out.println("TOPIC: "+msg.get(DIAMessage.TOPIC)+"  Time: "+msg.get(DIAMessage.OCCUR_TIME));
 				// 处理收到的事件
 				MessageParser mp = new MessageParser();
 				Event event = mp.MessageParserMapToEvent(msg,msg.get(DIAMessage.TOPIC));
