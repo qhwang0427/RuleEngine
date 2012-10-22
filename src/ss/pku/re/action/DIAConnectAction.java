@@ -79,6 +79,9 @@ public class DIAConnectAction extends ActionSupport {
 			for (int i = 0; i < subscribeList.size(); i++) {
 				try {
 					cep.addEventGenerator(subscribeList.get(i).getTopic());
+					//为了能够使用phone主题的处理，此处加个是否为PHONE主题的判断，
+					//如果是的话，new一个类来保存获得的phone的蓝牙地址，用于回发给DIAServer
+					//如何回发给DIAServer，就是要在service类里面加上相应的处理代码了
 					// subscribeList.get(i).getEventId()
 					
 					cep.addListener("Select * From "
