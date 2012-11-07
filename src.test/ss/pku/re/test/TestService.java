@@ -26,8 +26,8 @@ public class TestService {
 	public void testSession2(){
 		Event event = new Event();
 		event.setEventId("event01");
-		double[] values = new double[1];
-		values[0] = Double.parseDouble("11");
+		String[] values = new String[1];
+		values[0] = "11";
 		
 		event.setValue("01010101");
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSSS");
@@ -35,8 +35,8 @@ public class TestService {
 		event.setValues(values);
 		Event event2 = new Event();
 		event2.setEventId("event03");
-		double[] values2 = new double[1];
-		values[0] = 12;
+		
+		values[0] = "12";
 		
 		event2.setValue("01010101");
 		SimpleDateFormat format2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSSS");

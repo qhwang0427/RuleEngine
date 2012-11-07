@@ -33,18 +33,18 @@ public class MessageParser implements IMessageParser {
 		// 数值封装到事件
 		Event mevent = new Event();
 
-		double[] values = null;
+		String[] values = null;
 		String Value = ms.get(ms.get("Topic"));
 		if (Value.contains("|")) {
 
 			String[] svalues = Value.split("\\|");
-			values = new double[svalues.length];
+			values = new String[svalues.length];
 			for (int i = 0; i < svalues.length; i++) {
 				System.out.println(svalues[i]);
-				values[i] = Double.parseDouble(svalues[i]);
+				values[i] = svalues[i];
 			}
 		} else {
-			values = new double[] { Double.parseDouble(Value) };
+			values = new String[] { Value };
 		}
 
 		mevent.setValues(values);
@@ -66,19 +66,19 @@ public class MessageParser implements IMessageParser {
 		// 数值封装到事件
 		Event mevent = new Event();
 
-		double[] values = null;
+		String[] values = null;
 		String value = ms.get(topic);
 		//System.out.println("value: "+value);
 		if (value.contains("|")) {
 
 			String[] svalues = value.split("\\|");
-			values = new double[svalues.length];
+			values = new String[svalues.length];
 			for (int i = 0; i < svalues.length; i++) {
 				System.out.println(svalues[i]);
-				values[i] = Double.parseDouble(svalues[i]);
+				values[i] = svalues[i];
 			}
 		} else {
-			values = new double[] { Double.parseDouble(value) };
+			values = new String[] { value };
 		}
 
 		mevent.setValues(values);

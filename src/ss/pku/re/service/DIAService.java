@@ -17,4 +17,5 @@ public interface DIAService {
 	 * 
 	 */
 	public void sendService(Service s);
+	public void sendService(Service s, Event e);
 }

@@ -58,10 +58,14 @@ public class RulesBuilder {
 	}
 	
 	private void parseRule(Scene scene,Rule rule){
+		String blueToothEvent_id = null;//added by qhwang
 		buffer.append("rule'"+"rule_"+scene.getSceneId()+"_"+rule.getName()+"'\n");
 		buffer.append("when"+"\n");
 		for(BusinessEvent event:rule.getConditions()){
-			buffer.append("e_"+event.getEventId()+":Event(eventId.equals(");
+			String temp = event.getEventId();
+			if(2==temp.indexOf("_"))//added by qhwang
+				blueToothEvent_id=temp;                  //added by qhwang
+			buffer.append("e_"+temp+":Event(eventId.equals(");
 			buffer.append("'"+event.getEventId()+"'");
 			buffer.append(")");
 			parseExpression(event.getExpression(),event);
@@ -81,7 +85,10 @@ public class RulesBuilder {
 			System.out.print(rule.getSerivce().getServiceId());
 			buffer.append("service.setServiceId('"+rule.getSerivce().getServiceId()+"');\n");
 			buffer.append("service.setValue('"+rule.getSerivce().getValue()+"');\n");
-			buffer.append("DIAServiceManager.sendService(service);\n end");
+			buffer.append("DIAServiceManager.sendService(service");
+			if(null != blueToothEvent_id)       //用于在服务处理的时候传入有关手机蓝牙的事件，added by qhwang
+				buffer.append(",e_"+blueToothEvent_id);//added by qhwang
+			buffer.append(");\n end");
 		}
 		buffer.append("\n");
 	}
@@ -138,8 +145,16 @@ public class RulesBuilder {
 		String[] expressions = expression.split(";");
 		for(String e:expressions){
 			/**如果是值的约束*/
-			if(e.startsWith("values")){
+			if(e.startsWith("values") || e.startsWith("!values")){
+				if(e.contains("equals"))
 				buffer.append(","+e);
+				else{
+			
+					StringBuilder ts=new StringBuilder(e);
+					ts.insert(ts.indexOf("]")+1,")");
+					String ms=ts.toString();
+					buffer.append(",Double.parseDouble("+ms);
+					}
 				System.out.println(e);
 			}
 			/**发生次数的约束*/

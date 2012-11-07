@@ -50,8 +50,8 @@ public class TestTimeSequence {
 	public void testTimes(){
 		Event event = new Event();
 		event.setEventId("event01");
-		double[] values = new double[1];
-		values[0] = Double.parseDouble("11");
+		String[] values = new String[1];
+		values[0] = "11";
 		
 		event.setValue("01010101");
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSSS");
@@ -60,7 +60,7 @@ public class TestTimeSequence {
 		Event event2 = new Event();
 		
 		
-		values[0] = 12;
+		values[0] = "12";
 		ApplicationContext context = ContextFactory.getContext();
 		IEventService t = (EventService)context.getBean("eventService");
 		int i=t.getTimesByEvent(event,20);

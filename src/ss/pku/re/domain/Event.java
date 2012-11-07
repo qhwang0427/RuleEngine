@@ -22,7 +22,7 @@ public class Event implements Serializable{
 	private String eventId;
 	private String value;
 	private int dimension;
-	private double values[];
+	private String values[];
 	private String receivedTime;
 	private int times;
 	private Logger logger = Logger.getLogger(Event.class);
@@ -45,7 +45,7 @@ public class Event implements Serializable{
 	public Event(){}
 	
 	public Event(int dimension){
-		values = new double[dimension];
+		values = new String[dimension];
 	}
 	
 	/*getter setter */
@@ -138,11 +138,11 @@ public class Event implements Serializable{
 		this.dimension = dimension;
 	}
 
-	public double[] getValues() {
+	public String[] getValues() {
 		return values;
 	}
 
-	public void setValues(double[] values) {
+	public void setValues(String[] values) {
 		this.values = values;
 	}
 	

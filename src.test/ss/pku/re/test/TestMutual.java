@@ -28,7 +28,7 @@ public class TestMutual {
 		event.setEventId("event02");
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		event.setReceivedTime(format.format(new Date()));
-		event.setValues(new double[]{32});
+		event.setValues(new String[]{"32"});
 		service.receiveEvent(event);
 		Thread.sleep(6000);
 //		//2. 又来了个A事件 A=33
@@ -41,12 +41,12 @@ public class TestMutual {
 		Event event3 = new Event(1);
 		event3.setEventId("event02");
 		event3.setReceivedTime(format.format(new Date()));
-		event3.setValues(new double[]{32});
+		event3.setValues(new String[]{"32"});
 		service.receiveEvent(event3);
 		Event event4 = new Event(1);
 		event4.setEventId("event03");
 		event4.setReceivedTime(format.format(new Date()));
-		event4.setValues(new double[]{32});
+		event4.setValues(new String[]{"32"});
 		service.receiveEvent(event4);
 		
 	}

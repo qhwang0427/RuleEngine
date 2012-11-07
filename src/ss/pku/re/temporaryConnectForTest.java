@@ -41,7 +41,7 @@ public class temporaryConnectForTest extends Thread {
 	//	ApplicationContext context = ContextFactory.getContext();
 		IRuleService ruleService  = (RuleServiceByDrools)ContextFactory.getContext().getBean("ruleService");
 		
-   	 double[] dvalues=null;
+		String[] dvalues=null;
    	Event event=new Event(1);
    	 int i=2;
    	
@@ -62,13 +62,13 @@ public class temporaryConnectForTest extends Thread {
 		    	 
 		    	Date date=new Date();
 		    	 event.setReceivedTime(sdf.format(date));
-		    	 dvalues=new double[a.length-1];
+		    	 dvalues=new String[a.length-1];
 		    	 event.setEventId(a[0]);
 		    	 event.setDimension(Integer.parseInt(a[1]));
 		    	 System.out.println(event.getDimension());
 		    	 if(event.getDimension()==2){
 		    	 for(i=2;i<a.length;i++){
-		    		 dvalues[i-2]=Double.parseDouble(a[i]);
+		    		 dvalues[i-2]=a[i];
 		    		 System.out.println(Double.parseDouble(a[i]));
 		    	 }
 		    	 
