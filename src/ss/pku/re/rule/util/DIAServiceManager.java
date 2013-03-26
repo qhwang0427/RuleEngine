@@ -3,11 +3,11 @@ package ss.pku.re.rule.util;
 import ss.pku.re.domain.Event;
 import ss.pku.re.rule.util.domain.Service;
 import ss.pku.re.service.DIAService;
-import ss.pku.re.service.DIAServiceImplForTest;
+import ss.pku.re.service.DIAServiceImplForCommand;
 
 public class DIAServiceManager {
 
-	private static DIAService diaService = new DIAServiceImplForTest();
+	private static DIAService diaService = new DIAServiceImplForCommand();
 
 	public static void sendEvent(Event event) {
 		diaService.sendEvent(event);

@@ -63,7 +63,7 @@ public class RulesBuilder {
 		buffer.append("when"+"\n");
 		for(BusinessEvent event:rule.getConditions()){
 			String temp = event.getEventId();
-			if(2==temp.indexOf("_"))//added by qhwang
+			if(temp.matches("([0-9a-fA-F]{2}_){5}[0-9a-fA-F]{2}"))//added by qhwang判断该字符串是否为蓝牙地址（冒号被换成_了）
 				blueToothEvent_id=temp;                  //added by qhwang
 			buffer.append("e_"+temp+":Event(eventId.equals(");
 			buffer.append("'"+event.getEventId()+"'");
@@ -90,6 +90,7 @@ public class RulesBuilder {
 				buffer.append(",e_"+blueToothEvent_id);//added by qhwang
 			buffer.append(");\n end");
 		}
+		
 		buffer.append("\n");
 	}
 	public void createRule(Scenes scenes,String fileName){
@@ -239,4 +240,9 @@ public class RulesBuilder {
 		}
 		return true;
 	}
+	
+	/*public static void main(String args[]){
+		String s = "00_0E_A5_00_50_96";
+		System.out.println(s.matches("([0-9a-fA-F]{2}_){5}[0-9a-fA-F]{2}"));//判断该字符串是否为蓝牙地址（冒号被换成_了）
+	}*/
 }

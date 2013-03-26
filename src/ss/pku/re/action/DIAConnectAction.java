@@ -45,7 +45,7 @@ public class DIAConnectAction extends ActionSupport {
 		ContinuedEventProcessor cep = null;
 		try {
 			cep= ContinuedEventProcessor.getInstance(
-					"ws://192.168.213.105:8080/DIAServer/core-socket", "jerry", "2012727");
+					"ws://192.168.129.188:8080/DIAServer/core-socket", "jerry", "2012727");
 		} catch (LoginFailure e1) {
 			e1.printStackTrace();
 		}

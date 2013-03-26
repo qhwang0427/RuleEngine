@@ -12,7 +12,7 @@ import ss.pku.re.SubscribeToEvent.SubscribeProvider;
 import ss.pku.re.domain.Event;
 import ss.pku.re.rule.util.domain.Service;
 
-public class DIAServiceImplForTest implements DIAService {
+public class DIAServiceImplForCommand implements DIAService {
 	private String uri = "ws://192.168.213.105:8080/DIAServer/core-socket";
 	private String user = "jerry";
 	private String pswd = "2012727";
@@ -76,7 +76,7 @@ public class DIAServiceImplForTest implements DIAService {
 	@Override
 	public void sendService(Service s, Event event) {
 		System.out.println(s.getValue()+'-'+s.getServiceId());
-		System.out.println(event.getEventId()+':'+event.getValues()[0]);
+		System.out.println(event.getEventId()+'='+event.getValues()[0]);
 		
 		ContinuedEventProcessor cep;
 		try {
@@ -84,17 +84,22 @@ public class DIAServiceImplForTest implements DIAService {
 			if("16".equals(s.getServiceId())){//针对手机的命令
 				if("1600001$".equals(s.getValue()) || "1600002$".equals(s.getValue())){//使用收集器
 					
-					if(null == BluetoothCollection.cEventProcessor){//尚未初始化
-						if("1600001$".equals(s.getValue()))//发送给手机播音频
-							BluetoothCollection.sendToLoudspeakerOrPhone = BluetoothCollection.SEND_TO_PHONE;//设置用于控制手机还是喇叭
-						else//发送给喇叭播音频
+					if("1600001$".equals(s.getValue())){//发送给手机播音频
+						//BluetoothCollection.sendToLoudspeakerOrPhone = BluetoothCollection.SEND_TO_PHONE;//设置用于控制手机还是喇叭
+						cep.sendAudioToPhoneCommand(event.getEventId()+"-"+event.getValues()[0]);
+					}else{//发送给喇叭播音频
+						if(null == BluetoothCollection.cEventProcessor){//尚未初始化
 							BluetoothCollection.sendToLoudspeakerOrPhone = BluetoothCollection.SEND_TO_LOUDSPEAKER;//设置用于控制手机还是喇叭
-						BluetoothCollection.init(cep);
+							BluetoothCollection.init(cep);
+						}
+						BluetoothCollection.addBluetooth(event.getEventId()+"-"+event.getValues()[0]);//将blipnode和手机蓝牙添加到收集类中，由该类来做处理
+						
 					}
-					BluetoothCollection.addBluetooth(event.getValues()[0]);//将蓝牙添加到收集类中，由该类来做处理
+					
+					
 					
 				}else{//直接发送控制命令来控制手机
-					cep.sendSameAudioToPhoneCommand(event.getValues()[0]+">"+s.getValue());
+					cep.sendSameAudioToPhoneCommand(event.getEventId()+"-"+event.getValues()[0]+">"+s.getValue());
 				}
 			}else{//如果不是针对手机的控制命令（即sensorID为16），则直接发送
 				cep.sendCommand(s.getServiceId(), s.getValue());
